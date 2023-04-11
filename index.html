@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thi Giua Ky</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="from1">
+    <header>
+        <div class="logo">
+            <img src="./images/logo.jpg" alt="">
+        </div>
+        <div class="title">
+            <h2>Thiết Kế Nội Thất</h2>
+        </div>
+        <div class="contact">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-car"></i>
+                    <a href="#">DELIVERY</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-address-book"></i>
+                    <a href="#">CONTACT</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="#">My Cart</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- HR -->
+    <div class="hr"></div>
+
+
+    <!-- Body (CONTENT) -->
+    <section class="big_container">
+        <nav class="menu_nav">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Trang Chủ</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-newspaper"></i>
+                    <a href="#">Tin Tức</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-image"></i>
+                    <a href="#">Hình Ảnh</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-address-book"></i>
+                    <a href="#">Đăng ký</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="w3-content w3-display-container" style="max-width:600px; margin-right: 25px; ;" >      
+            <h1 style="text-align: center; color: white; text-shadow: 2px 1px 10px green; font-weight: bold;padding-bottom: 20px;">Mẫu Thiết Kế Mới Nhất 2023</h1>
+            <img class="mySlides" src="images/h1.jpg" style="width:100%">
+            <img class="mySlides" src="images/h2.jpg" style="width:100%">
+            <img class="mySlides" src="images/h4.jpg" style="width:100%">
+            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+              <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+              <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            </div>
+          </div>
+          <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function currentDiv(n) {
+              showDivs(slideIndex = n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+              }
+              x[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " w3-white";
+            }
+            </script>
+        
+
+        <article class="infomation">
+            <h1>Giới Thiệu</h1>
+            <img src="images/Scandinavian.jpg" alt="">
+            <div class="detail">
+                <p>Interior Designer hay có nghĩa là thiết kế nội thất một ngành nghề khá phát triển và
+                    đang cực kỳ hot hiện nay kiến</p>
+            </div>
+        </article>
+    </section>
+
+    <!-- DEATAIL PRODUCT -->
+    <section class="product_container">
+
+        <div class="product_deatails">
+            <div class="tile_h1">
+                <h1>Speacials</h1>
+            </div>
+            <div class="product_left">
+                <img src="./images/product-01.png" alt="">
+                <div class="tile">
+                    <h3>Lorem ipsum dolor</h3>
+                    <span>$140.00</span>
+                </div>
+            </div>
+            <div class="product_left">
+                <img src="./images/product-02.png" alt="">
+                <div class="tile">
+                    <h3>Lorem ipsum dolor</h3>
+                    <span>$140.00</span>
+                </div>
+            </div>
+            <div class="product_left">
+                <img src="./images/product-03.png" alt="">
+                <div class="tile">
+                    <h3>Lorem ipsum dolor</h3>
+                    <span>$140.00</span>
+                </div>
+            </div>
+            <div class="product_left">
+                <img src="./images/product-04.png" alt="">
+                <div class="tile">
+                    <h3>Lorem ipsum dolor</h3>
+                    <span>$140.00</span>
+                </div>
+            </div>
+            <div class="product_left">
+                <img src="./images/product-05.png" alt="">
+                <div class="tile">
+                    <h3>Lorem ipsum dolor</h3>
+                    <span>$140.00</span>
+                </div>
+            </div>
+            <div class="product_left">
+                <img src="./images/product-06.png" alt="">
+                <div class="tile">
+                    <h3>Lorem ipsum dolor</h3>
+                    <span>$140.00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="between_products">
+            <div class="bigprt">
+                <img src="./images/product-big-01.png" alt="">
+                <h5>Dolor sit amet conse cteur</h5>
+                <span>$109.25 <strong>Add to cart</strong></span>
+            </div>
+            <div class="bigprt">
+                <img src="./images/product-big-02.png" alt="">
+                <h5>Dolor sit amet conse cteur</h5>
+                <span>$109.25 <strong> Add to cart</strong></span>
+            </div>
+            <div class="bigprt">
+                <img src="./images/product-big-03.png" alt="">
+                <h5>Dolor sit amet conse cteur</h5>
+                <span>$109.25 <strong>Add to cart</strong></span>
+            </div>
+            <div class="bigprt">
+                <img src="./images/product-big-04.png" alt="">
+                <h5>Dolor sit amet conse cteur</h5>
+                <span>$109.25 <strong>Add to cart</strong></span>
+            </div>
+        </div>
+
+
+        <div class="category">
+            <h2>Category</h2>
+            <div class="links">
+                <div class="link">
+                    <a href="#">Living Room Sets(9)</a>
+                </div>
+                <div class="link">
+                    <a href="#">Leather Living</a>
+                </div>
+                <div class="link">
+                    <a href="#">Sofas(6)</a>
+                </div>
+                <div class="link">
+                    <a href="#">Sectional(6)</a>
+                </div>
+                <div class="link">
+                    <a href="#">Sleepers(6)</a>
+                </div>
+                <div class="link">
+                    <a href="#">Chair(6)</a>
+                </div>
+                <div class="link">
+                    <a href="#">Ottomans(4)</a>
+                </div>
+                <div class="link">
+                    <a href="#">Cocktail Ottomans(5)</a>
+                </div>
+                <div class="link">
+                    <a href="#">Sofa Tables (4)</a>
+                </div>
+                <div class="link">
+                    <a href="#">Coffee Tables (3)</a>
+                </div>
+                <div class="link">
+                    <a href="#">Bedroom Sets (4)</a>
+                </div>
+                <div class="link">
+                    <a href="#">Beds(5)</a>
+                </div>
+                <div class="link">
+                    <a href="#">Guest Beds(3)</a>
+                </div>
+            </div>
+            <div class="banner">
+                <img src="./images/banner-01.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- HR -->
+    <div class="hr"></div>
+
+    <!-- Small Product -->
+    <section class="small_product">
+        <div class="sm_pr">
+            <img src="./images/product-06.png" alt="">
+        </div>
+        <div class="sm_pr">
+            <img src="./images/product-02.png" alt="">
+        </div>
+        <div class="sm_pr">
+            <img src="./images/product-03.png" alt="">
+        </div>
+        <div class="sm_pr">
+            <img src="./images/product-04.png" alt="">
+        </div>
+        <div class="sm_pr">
+            <img src="./images/product-05.png" alt="">
+        </div>
+        <div class="sm_pr">
+            <img src="./images/product-06.png" alt="">
+        </div>
+        <div class="sm_pr">
+            <img src="./images/product-01.png" alt="">
+        </div>
+        <div class="sm_pr">
+            <img src="./images/product-02.png" alt="">
+        </div>
+        <div class="sm_pr">
+            <img src="./images/product-03.png" alt="">
+        </div>
+        <div class="sm_pr">
+            <img src="./images/product-04.png" alt="">
+        </div>
+        <div class="sm_pr">
+            <img src="./images/product-05.png" alt="">
+        </div>
+        <div class="sm_pr">
+            <img src="./images/product-06.png" alt="">
+        </div>
+    </section>
+
+    <!-- Address -->
+    <section class="address">
+        <div class="address_1">
+            <a>Interior Công ty thiết kế nội thất uy tín tại TpHCM '4A/61 Đường D1, phường 25, Bình Thạnh'</a>
+        </div>
+    </section>
+
+    <!-- HR -->
+    <div class="hr2"></div>
+
+
+    <footer>
+        <div class="copryright">
+            <p>Website được thiết kế bởi</p>
+            <p>&copy;<span>1721001086-Panyasak Khamkeuth-21DTH4</span></p>
+        </div>
+        <div class="socials">
+            <p style="color: white; text-shadow: 1px 2px 3px green;"> Liên Hệ: </p>
+            <a href="https://www.facebook.com/they8439/" target="_blank"> <i class="fa-brands fa-facebook" style="color: blue"></i></a>
+            <a href="https://www.youtube.com/channel/UCdHVTBQnx9mFLSD32RgZ17w" target="_blank"> <i class="fa-brands fa-youtube" style="color: #da3518"></i></a>
+            <a href="https://myaccount.google.com/?hl=en&utm_source=OGB&utm_medium=act" target="_blank"> <i class="fa-brands fa-google-plus" style="color: #da3518"></i></a>
+            <a href="https://www.instagram.com/em_they/" target="_blank"> <i class="fa-brands fa-square-instagram" style="color: pink"></i></a>
+            
+        </div>
+    </footer>
+
+
+    </div>
+</body>
+
+</html>
